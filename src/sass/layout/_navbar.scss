@@ -1,16 +1,16 @@
-
-
 .app__navbar {
+  // height: 15vh;
   width: 100%;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 1rem 2rem;
+  padding: 1.5rem 2.5rem;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 0.06rem solid rgba(255, 255, 255, 0.18);
+
   position: fixed;
   z-index: 2;
 
@@ -20,13 +20,13 @@
     align-items: center;
 
     img {
-      width: 90px;
-      height: 20px;
+      width: 10rem;
+      height: 2rem;
 
-      @media screen and (min-width 1068px) {
-        width: 180px;
-        height: 40px;
-      }
+      // @media screen and (min-width: 2000px) {
+      //   width: 180px;
+      //   height: 40px;
+      // }
     }
   }
 
@@ -35,5 +35,86 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      margin: 0 1rem;
+
+      div {
+        width: 5px;
+        height: 5px;
+        background: transparent;
+        border-radius: 50%;
+        margin-bottom: 5px;
+      }
+
+      a {
+        color: $gray-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        flex-direction: column;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+
+      &:hover {
+        div {
+          background: $secondary-color;
+        }
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+
+.app__navbar-menu {
+  width: 3.5em;
+  height: 3.5rem;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background: $secondary-color;
+
+  svg {
+    width: 70%;
+    height: 70%;
+    color: $white-color;
+  }
+
+  div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 1rem;
+
+    width: 80%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    background: url("../../../public/assets/bgWhite.png");
+    background-color: $white-color;
+    background-size: cover;
+    background-repeat: repeat;
   }
 }
