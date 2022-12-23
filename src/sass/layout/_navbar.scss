@@ -14,6 +14,12 @@
   position: fixed;
   z-index: 2;
 
+  &-p {
+    font-size: 2.5rem;
+    font-family: $font-logo-2;
+    font-weight: 400;
+  }
+
   &-logo {
     display: flex;
     justify-content: space-between;
@@ -74,6 +80,9 @@
     @media screen and (max-width: 900px) {
       display: none;
     }
+    // @include respond(tab-port) {
+    //   display: none;
+    // }
   }
 }
 
@@ -84,11 +93,11 @@
   position: relative;
 
   display: flex;
-  cursor: pointer;
   justify-content: center;
   align-items: center;
   background: $secondary-color;
 
+  // HiMenuAlt4
   svg {
     width: 70%;
     height: 70%;
@@ -112,9 +121,60 @@
     align-items: flex-end;
     flex-direction: column;
 
-    background: url("../../../public/assets/bgWhite.png");
+    background: url("../../../src/assets/bgWhite.png");
     background-color: $white-color;
     background-size: cover;
     background-repeat: repeat;
+
+    box-shadow: 0 0 2rem rgba(168, 168, 168, 0.15);
+
+    svg {
+      width: 3.5rem;
+      height: 3.5rem;
+      color: $black-color;
+      margin: 0.5rem 1rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      li {
+        margin: 1rem;
+
+        a {
+          color: $gray-color;
+          text-decoration: none;
+          font-size: 2rem;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
   }
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+  // @include respond(phone) {
+  //   display: none;
+  // }
 }
