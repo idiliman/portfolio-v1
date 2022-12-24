@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <p className="app__navbar-p">IDIL IMAN</p>
+        <p className="app__navbar-p">YOUR LOGO</p>
       </div>
 
       <ul className="app__navbar-links">

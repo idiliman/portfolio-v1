@@ -50,25 +50,25 @@
 //     }
 //   }
   
-//   .head-text {
-//     font-size: 2.75rem;
-//     font-weight: 800;
-//     text-align: center;
-//     color: var(--black-color);
-//     text-transform: capitalize;
+  .head-text {
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    color: $black-color;
+    text-transform: capitalize;
   
-//     span {
-//       color: var(--secondary-color);
-//     }
+    span {
+      color: $secondary-color;
+    }
   
-//     @media screen and (min-width: 2000px) {
-//       font-size: 4rem;
-//     }
+    @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+    }
   
-//     @media screen and (max-width: 450px) {
-//       font-size: 2rem;
-//     }
-//   }
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
+  }
   
   .p-text {
     font-size: 1.7rem;
@@ -82,20 +82,20 @@
     }
   }
   
-//   .bold-text {
-//     font-size: 1rem;
-//     font-weight: 800;
-//     color: var(--black-color);
-//     text-align: left;
+  .bold-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--black-color);
+    text-align: left;
   
-//     @media screen and (min-width: 2000px) {
-//       font-size: 2rem;
-//     }
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
   
-//     @media screen and (max-width: 450px) {
-//       font-size: 0.9rem;
-//     }
-//   }
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+  }
   
 //   .app__social {
 //     display: flex;
