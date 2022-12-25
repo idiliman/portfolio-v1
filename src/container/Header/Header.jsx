@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import man from "../../../src/assets/man.svg";
+import man from "../../../src/assets/man_2.svg";
 import circle from "../../../src/assets/circle.svg";
 const scaleVariants = {
   whileInView: {
@@ -11,6 +11,7 @@ const scaleVariants = {
     },
   },
 };
+import { AppWrap } from "../../wrapper";
 
 function Header() {
   return (
@@ -70,4 +71,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default AppWrap(Header, "home");

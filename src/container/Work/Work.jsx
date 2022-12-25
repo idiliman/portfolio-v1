@@ -1,12 +1,8 @@
-import React from 'react'
-
+import { useState, useEffect } from "react";
+import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 function Work() {
-  return (
-    <div>
-      Work
-    </div>
-  )
+  return <div>Work</div>;
 }
 
-export default Work
+export default Work;

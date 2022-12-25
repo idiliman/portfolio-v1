@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sanity/client": "^3.4.1",
+    "@sanity/image-url": "^1.0.1",
     "framer-motion": "^7.10.3",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
