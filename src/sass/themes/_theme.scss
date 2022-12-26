@@ -26,7 +26,7 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 
   @media screen and (max-width: 450px) {
     padding: 4rem 1rem 2rem;
@@ -82,7 +82,7 @@
 }
 
 .head-text {
-  font-size: 2.75rem;
+  font-size: 3.5rem;
   font-weight: 800;
   text-align: center;
   color: $black-color;

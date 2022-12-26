@@ -5,13 +5,21 @@
   align-items: center;
   // justify-content: space-evenly;
 
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 25rem;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   border: 0.06rem solid rgba(255, 255, 255, 0.18);
 
   position: fixed;
   z-index: 2;
+
+  @media screen and (max-width: 1200px) {
+    padding: 1.5rem 10rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 1.5rem 5rem;
+  }
 
   &-p {
     font-size: 2.5rem;

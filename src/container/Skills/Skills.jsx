@@ -18,7 +18,10 @@ function Skills() {
 
   return (
     <div className="skills">
-      <h2 className="head-text">Skills</h2>
+      {/* <h2 className="head-text">Skills</h2> */}
+      <h2 className="head-text">
+        <span>Technologies</span> I’ve been working with
+      </h2>
 
       <div className="skills__container u-margin-top-xs">
         <motion.div className="skills__container-list ">
@@ -44,4 +47,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default AppWrap(Skills, "skills");

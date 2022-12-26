@@ -39,11 +39,11 @@ function Header() {
               I'm a self taught developer.<br/>Currently. I'm focused on the frontend.
             </p>
           </div>
-          <div className="tag-cmp app__flex">
+          {/* <div className="tag-cmp app__flex">
             <p className="p-text">
             Current Works !
             </p>
-          </div>
+          </div> */}
         </div>
       </motion.div>
 

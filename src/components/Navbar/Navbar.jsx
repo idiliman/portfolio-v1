@@ -9,12 +9,12 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <p className="app__navbar-p">YOUR LOGO</p>
+        <p className="app__navbar-p">Idil Iman</p>
       </div>
 
       {/* Main menu */}
       <ul className="app__navbar-links">
-        {["home", "about", "work", "skills", "contact"].map((item) => (
+        {["home", "work", "skills"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -22,7 +22,11 @@ const Navbar = () => {
         ))}
 
         <div className="resume-button">
-          <a href="https://drive.google.com/file/d/10z3KrwkBiXKLsCNrpZthg0jBxaa_khZ1/view?usp=sharing" target="_blank" rel="noreferrer">
+          <a
+            href="https://drive.google.com/file/d/10z3KrwkBiXKLsCNrpZthg0jBxaa_khZ1/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
             Resume
           </a>
         </div>
@@ -40,7 +44,7 @@ const Navbar = () => {
             <HiX onClick={() => setToggle(false)} />
 
             <ul>
-              {["home", "about", "work", "skills", "contact"].map((item) => (
+              {["home", "work", "skills"].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
