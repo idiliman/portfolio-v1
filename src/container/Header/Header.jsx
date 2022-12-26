@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import man from "../../../src/assets/man_2.svg";
 import circle from "../../../src/assets/circle.svg";
+import { BsArrowRight } from "react-icons/bs";
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
@@ -36,14 +37,16 @@ function Header() {
 
           <div className="tag-cmp app__flex">
             <p className="p-text">
-              I'm a self taught developer.<br/>Currently. I'm focused on the frontend.
+              I'm a self taught developer.
+              <br />
+              Currently. I'm focused on the frontend.
             </p>
           </div>
-          {/* <div className="tag-cmp app__flex">
-            <p className="p-text">
-            Current Works !
-            </p>
-          </div> */}
+
+          <div className="project-button">
+            <a href="#work">My Current Projects</a>
+            <BsArrowRight />
+          </div>
         </div>
       </motion.div>
 
