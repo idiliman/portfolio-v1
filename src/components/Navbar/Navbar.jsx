@@ -12,6 +12,7 @@ const Navbar = () => {
         <p className="app__navbar-p">YOUR LOGO</p>
       </div>
 
+      {/* Main menu */}
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
@@ -19,8 +20,15 @@ const Navbar = () => {
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
+
+        <div className="resume-button">
+          <a href="https://drive.google.com/file/d/10z3KrwkBiXKLsCNrpZthg0jBxaa_khZ1/view?usp=sharing" target="_blank" rel="noreferrer">
+            Resume
+          </a>
+        </div>
       </ul>
 
+      {/* Hamburger menu */}
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 

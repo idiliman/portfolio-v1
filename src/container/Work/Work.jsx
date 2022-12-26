@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
@@ -38,7 +38,7 @@ function Work() {
   return (
     <div className="work">
       <h2 className="head-text">
-        My <span>Portfolio</span> Section
+      Some Things I’ve  <span>Built</span>
       </h2>
 
       <div className="work__filter">

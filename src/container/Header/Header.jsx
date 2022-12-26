@@ -30,13 +30,19 @@ function Header() {
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Logo</h1>
+              <h1 className="head-text">Idil</h1>
             </div>
           </div>
 
           <div className="tag-cmp app__flex">
-            <p className="p-text">Hello123</p>
-            <p className="p-text">Hello345</p>
+            <p className="p-text">
+              I'm a self taught developer.<br/>Currently. I'm focused on the frontend.
+            </p>
+          </div>
+          <div className="tag-cmp app__flex">
+            <p className="p-text">
+            Current Works !
+            </p>
           </div>
         </div>
       </motion.div>

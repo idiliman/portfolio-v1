@@ -1,12 +1,11 @@
 .app__navbar {
   // height: 15vh;
   width: 100%;
-
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  // justify-content: space-evenly;
 
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 5rem;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   border: 0.06rem solid rgba(255, 255, 255, 0.18);
@@ -21,8 +20,9 @@
   }
 
   &-logo {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
 
     img {
@@ -37,7 +37,7 @@
   }
 
   &-links {
-    flex: 1;
+    // flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,7 @@
       }
 
       a {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: $gray-color;
         text-decoration: none;
         text-transform: uppercase;

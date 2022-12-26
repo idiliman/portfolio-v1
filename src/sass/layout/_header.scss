@@ -122,10 +122,11 @@
 .tag-cmp {
   flex-direction: column;
   margin-top: 1.5rem;
+  font-size: 1.6rem;
 
   p {
     width: 100%;
-    text-transform: uppercase;
+    // text-transform: uppercase;
   }
 
   //   @media screen and (max-width: 1200px) {
