@@ -1,6 +1,3 @@
-// import { images } from "../../constants";
-// import logo from '../../../public/assets/logo.png'
-import logo from "../../../src/assets/logo.png";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { useState } from "react";
