@@ -180,6 +180,35 @@
         color: $white-color;
       }
     }
+
+    &-iconsmall {
+      width: 100%;
+      height: 100%;
+      margin-top: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        display: none;
+        margin: 1rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        svg {
+          width: 50%;
+          height: 50%;
+          color: $white-color;
+        }
+
+        @media screen and (max-width: 800px) {
+          display: flex;
+        }
+      }
+    }
   }
 
   //   &__cards {

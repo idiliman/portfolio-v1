@@ -44,9 +44,16 @@ const Navbar = () => {
             <HiX onClick={() => setToggle(false)} />
 
             <ul>
-              {["home", "work", "skills"].map((item) => (
+              {["home", "work", "skills", "resume"].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                  <a
+                    href={`${
+                      item === "resume"
+                        ? "https://drive.google.com/file/d/10z3KrwkBiXKLsCNrpZthg0jBxaa_khZ1/view?usp=sharing"
+                        : `#${item}`
+                    }`}
+                    onClick={() => setToggle(false)}
+                  >
                     {item}
                   </a>
                 </li>

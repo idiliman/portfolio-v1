@@ -9,7 +9,7 @@ function Work() {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
-  console.log(filterWork);
+  // console.log(filterWork);
 
   useEffect(() => {
     const query = '*[_type == "works"]';
@@ -38,11 +38,11 @@ function Work() {
   return (
     <div className="work">
       <h2 className="head-text">
-      Some Things I’ve  <span>Built</span>
+        Some Things I’ve <span>Built</span>
       </h2>
 
       <div className="work__filter">
-        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+        {["React JS", "Next JS", "Redux", "Web3", "Sass", "All"].map(
           (item, index) => (
             <div
               key={index}
@@ -50,10 +50,6 @@ function Work() {
               className={`work__filter-item app__flex p-text ${
                 activeFilter === item ? "work__filter-active" : ""
               }`}
-
-              // className={`work__filter item app__flex p-text ${
-              //   activeFilter === item ? "work__active" : ""
-              // }`}
             >
               {item}
             </div>
@@ -108,7 +104,31 @@ function Work() {
 
             <div className="work__portfolio-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text u-margin-top-xs">{work.description}</p>
+
+              {/* Icon in small screen */}
+              <div className="work__portfolio-iconsmall">
+                <a href={work.projectLink} target="_blank" rel="noreferrer">
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{ duration: 0.25 }}
+                    className="app__flex"
+                  >
+                    <AiFillEye />
+                  </motion.div>
+                </a>
+
+                <a href={work.codeLink} target="_blank" rel="noreferrer">
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{ duration: 0.25 }}
+                    className="app__flex"
+                  >
+                    <AiFillGithub />
+                  </motion.div>
+                </a>
+              </div>
 
               <div className="work__portfolio-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>

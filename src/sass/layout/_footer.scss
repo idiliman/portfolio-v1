@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+
+  padding: 2.5rem;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 3rem;
+
+    div {
+        padding: 2rem;
+      svg {
+        width: 3rem;
+        height: 3rem;
+        color: $gray-color;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) 
+  {
+    display: block;
+  }
+}
