@@ -41,6 +41,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 100%;
+    z-index: 10;
 
     // Max-width (will apply from 0px to Xpx)
     @media screen and (max-width: 2000px) {
@@ -135,10 +136,6 @@
 }
 
 .project-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   padding: 1rem 2rem;
 
   border-radius: 1.5rem;
@@ -154,7 +151,9 @@
   &:hover {
     background-color: $secondary-color;
     box-shadow: 0px 15px 20px $secondary-color;
-    color: $white-color;
+    a {
+      color: $white-color;
+    }
     transform: translateY(-7px);
   }
 
@@ -163,13 +162,16 @@
   }
 
   a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-decoration: none;
     color: $black-color;
     font-weight: 500;
-    margin-right: 1.5rem;
 
-    &:hover {
-      color: $white-color !important;
+    svg {
+      margin-left: 0.7rem;
     }
   }
 }

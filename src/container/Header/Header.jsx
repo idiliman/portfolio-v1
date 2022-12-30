@@ -44,8 +44,9 @@ function Header() {
           </div>
 
           <div className="project-button">
-            <a href="#work">My Current Projects</a>
-            <BsArrowRight />
+            <a href="#work">
+              My Current Projects <BsArrowRight />
+            </a>
           </div>
         </div>
       </motion.div>
